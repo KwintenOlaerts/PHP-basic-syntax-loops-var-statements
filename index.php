@@ -1,5 +1,27 @@
 <?php
 
+/* include en require
+Include & Require
+They both do essentiely same thing but react to errors differently
+require different file ;
+
+syntax:
+include('name of file you include');
+require does exactly same thing
+
+include carries on with the code if there is an error, require does'nt thats the difference
+
+you see these kind of code in wordpress themes to load in different parts of a template
+
+
+*/
+
+include ('ninjas.php');
+require('ninjas.php')
+
+
+
+
 // Loops
 
 // Forloop
@@ -67,16 +89,26 @@
 //     echo 'condition not met';
 // }
 
-$products = [
-    ['name'=>'Purple Haze', 'price'=> 9],
-    ['name'=>'Lemon Haze', 'price'=> 11],
-    ['name'=>'Amnesia', 'price'=> 10],
-    ['name'=>'Jack Herrer', 'price'=> 7],
-    ['name'=>'Skunk', 'price'=> 6],
-    ['name'=>'Blueberry Cheese', 'price'=> 12],
-];
+// $products = [
+//     ['name'=>'Purple Haze', 'price'=> 9],
+//     ['name'=>'Lemon Haze', 'price'=> 11],
+//     ['name'=>'Amnesia', 'price'=> 10],
+//     ['name'=>'Jack Herrer', 'price'=> 7],
+//     ['name'=>'Skunk', 'price'=> 6],
+//     ['name'=>'Blueberry Cheese', 'price'=> 12],
+// ];
 
-foreach ($products as $product){
+// foreach[$products as product]{
+//     if($product['name'] === 'Amnesia'){
+//         break;
+//     }
+//     if($product['price'] >10){
+//         continue;
+//     }
+//     echo $product['name'] . < />;
+// }
+
+// foreach ($products as $product){
 
     // if($product['price'] < 13 && $product['price'] > 7){
     //     echo $product['name'] . '<br />';
@@ -186,6 +218,26 @@ foreach ($products as $product){
 // echo strlen($name);
 // echo strtoupper($name);
 // echo str_replace('b', 'f', $name);
+
+// functions
+// function formatProduct($product){
+//     echo "{$product['name']}"{$product['price]} to buy <br />"
+// }
+
+// Opmerking: als je uw variabelen in uw {} zet dan kan je die functie alleen dan oproepen, same 
+//     as in javascript
+// je kan een functie schrijven, genaamd global $naamvariabele en als je 
+// die aanroept zal het de variabele buiten de functie aanroepen.
+
+// variable scope
+// function myfunc(){
+//     $price = 10;
+//     echo $price;
+// }
+
+// myfunc();
+
+
 
 
 ?>
